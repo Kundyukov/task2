@@ -41,7 +41,7 @@ protected:
 class Tabul : protected Values //inheritance
 {
 private:
-	double y; //incapsulation 
+	double y; //encapsulation 
 public:
 	 virtual void tabulation()
 	{
