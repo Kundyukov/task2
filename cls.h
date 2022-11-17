@@ -7,7 +7,7 @@ class Intro //polymorph
 public:
 	virtual void morph()
 	{
-		std::cout << "function tabulation program\n\n";
+		std::cout << "Function tabulation program\n\n";
 	}
 };
 
@@ -15,7 +15,7 @@ class Values
 {
 protected:
 	double leftval, rightval, step, x, y;
-public:
+//public:
 	
 
 	double setleft()
@@ -69,7 +69,8 @@ public:
 	}
 	 void output() //file output
 	 {
-		 std::ofstream fout("C:\\Users\\Ivan\\Desktop\\hello.txt");
+		 //std::ofstream fout("C:\\Users\\Ivan\\Desktop\\hello.txt");
+		 std::ofstream fout("textfile.txt");
 		 for (x = leftval; x <= rightval; x += step) 
 		 {
 			 y = sqrt((pow(x, 2)) - 4 * log(x));
@@ -94,6 +95,6 @@ class Outro :public Intro //polymorph
 public:
 	virtual void morph() override
 	{
-		std::cout << "\nprogram was be finished\n";
+		std::cout << "\nProgram was be finished\n";
 	}
 };
